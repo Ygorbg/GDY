@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.top-bar nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.user-menu {
+    font-size: 24px;
+}
+
+.headline h1 {
+    padding: 20px;
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 24px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.news-item {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.highlighted-section {
+    padding: 20px;
+    background-color: #F5F5F5;
+}
+
+.highlighted-section h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
