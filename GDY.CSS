@@ -14,6 +14,19 @@ header {
     align-items: center;
 }
 
+#menu{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.user-icon{
+    width: 10%;
+    height: 10%;
+}
+
 .top-bar nav ul {
     list-style: none;
     display: flex;
@@ -30,10 +43,6 @@ header {
     padding: 5px;
     border-radius: 5px;
     border: none;
-}
-
-.user-menu {
-    font-size: 24px;
 }
 
 .headline h1 {
@@ -82,6 +91,12 @@ footer {
     margin-right: 10px;
     color: #FFFFFF;
     text-decoration: none;
+    align-content: center;
+}
+
+.social-media img{
+    width: 3%;
+    height: 3%;
 }
 
 .contact-info {
