@@ -17,19 +17,22 @@
         </nav>
         <input type="text" placeholder="Pesquisar..." class="search-bar">
         <img class="user-icon" src="login-icon.png" alt="login-icon">    
-        <button id="button"><img src="menu_barra.png" alt="menu-barra"></button>
-            <div id="menu">
-                <ul>
-                 <li><a href="#">Economia</a></li>
-                 <li><a href="#">Política</a></li>
-                 <li><a href="#">Saúde</a></li>
-                 <li><a href="#">Esportes</a></li>
-                 <li><a href="#">Cultura</a></li>
-                 <li><a href="#">Tempo</a></li>
-                 <li><a href="#">Tecnologia</a></li>
-                </ul>
-            </div>
+        <button class="button" onclick="toggleMenu()"><img src="menu_barra.png" alt="menu"></button>
     </header>
+
+    <div id="side-menu" class="side-menu">
+        <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()"></a>
+            <li><a href="#">Economia</a></li>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Saúde</a></li>
+            <li><a href="#">Esportes</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Tempo</a></li>
+            <li><a href="#">Tecnologia</a></li>
+        </ul>
+    </div>
+
     <main>
         <div class="noticias">
             <h1>Noticia 1</h1>

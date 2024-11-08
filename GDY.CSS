@@ -37,31 +37,50 @@ header {
     cursor: pointer;
 }
 
-#hamburger{
-    padding: 0 0 0 5;
-}
-
-#menu{
-    display: none;
-  }
-
-#menu a{
-    color: white;
-}
-
 ul{
     list-style: none;
 }
 
-#button{
-    width: 50px;
-    background-color:#175f94;
+.button{
+    background: none;
     border: none;
+    cursor: pointer;
 }
 
-#button img{
-    width: 100%;
-    padding: 0px 0px 0px 10px;
+.button img{
+    height: 30px;
+}
+
+.side-menu {
+    height: 0;
+    width: 250px;
+    position: fixed;
+    top: 15;
+    right: 0;
+    background-color:#175f94 ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #175f94;
+}
+
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
 
 /* Main */
