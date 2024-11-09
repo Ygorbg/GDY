@@ -34,9 +34,30 @@
     </div>
 
     <main>
-        <div class="noticias">
-            <h1>Noticia 1</h1>
-        </div>
+        <div id="corpo">
+            <div id='carrossel' onmouseover='parar()' onmouseout='iniciaSlider()'>
+                <div class="btn-esq">
+                    <button onclick='troca(-1)'><img class="seta" src="seta esquerda.png" alt="seta"> </button>
+                </div>
+                <div class="btn-dir">
+                    <button onclick='troca(1)'><img class="seta" src="seta direita.png" alt="seta"> </button>
+                </div>
+            </div>
+            <div class="noticias">
+                <div id="moticia 1" class="noticia 1">
+                    <img src="gato 1.jpg" alt="gato 1">
+                    <p> Noticia 1</p>
+                </div>
+                <div id="moticia 2" class="noticia 2">
+                    <img src="gato 2.jpg" alt="gato 2">
+                    <p> Noticia 2</p>
+                </div>
+                <div id="moticia 3" class="noticia 3">
+                    <img src="gato 3.jpg" alt="gato 3">
+                    <p> Noticia 3</p>
+                </div>
+            </div>
+            </div>
     </main>
 
     <footer>
