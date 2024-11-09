@@ -33,7 +33,7 @@ header {
 
 .search-bar{
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }
 
@@ -93,54 +93,135 @@ ul{
 
 main{
     align-content: center;
+    box-sizing: border-box;
 }
 
 #corpo{
+    display: grid;
+    border: 2px solid #333;
     margin: 0 250px;
     padding: 15px;
     background-color: #FFFFFF;
 }
 
 #carrossel{
-	width:700px;
-	height:300px;
-	border:1px;
-    border-radius: 10px;
-	margin:auto;
+	position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
 }
 
-#carrossel button{
-    cursor: pointer;
-    color: #FFFFFF;
-    border: none;
-    background: none;
+#carrossel .slide{
+    display: none;
 }
 
-.btn-esq{
+#carrossel .slide.active{
+    display: block;
+}
+
+
+.description{
     position: absolute;
-    top: 245px;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.btn-dir{
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
     position: relative;
-    top: 135px;
-    left: 655px;
 }
 
-.seta{
-    height: 30px;
+.modal img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal h2 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
 }
 
 .noticias{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    align-items: center;
     width: 500px;
     margin: 50px auto;
-    padding: 0 500px 20px 0;
+    padding: 0 200px 0px 60px;
     border-width: 5px;
-    justify-content: space-between;
+    justify-items: space-between;
+}
+
+h2{
+    font-style: italic;
+}
+
+.noticias p{
+    font-weight: 100;
+    font-style: normal;
+    font-size: 16px;
 }
 
 #noticia{
-    padding-top: 30px;
+    padding: 30px;
     border-top: 1px solid black;
     justify-content: space-between;
 }
@@ -151,20 +232,6 @@ main{
     width: 200px;
     height: 200px;
 }
-
-.noticia-txt{
-    text-align: center;
-    position: relative;
-    left: 50px;
-    bottom: 125px;
-}
-
-.noticia-txt p{
-    size: 3cm;
-    font-style: normal;
-}
-
-
 
 /* Footer */
 

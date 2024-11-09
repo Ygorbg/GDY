@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
             <a href="Assinaturas/GDY PREMIUM.html">GDY Premium</a>
         </nav>
         <input type="text" placeholder="Pesquisar..." class="search-bar">
-        <img class="user-icon" src="login-icon.png" alt="login-icon">    
+        <a href="login/login/login.html"><img class="user-icon" src="login-icon.png" alt="login-icon"></a>
         <button class="button" onclick="toggleMenu()"><img src="menu_barra.png" alt="menu"></button>
     </header>
 
@@ -35,39 +35,99 @@
 
     <main>
         <div id="corpo">
-            <div id='carrossel' onmouseover='parar()' onmouseout='iniciaSlider()'>
-                <div class="btn-esq">
-                    <button onclick='troca(-1)'><img class="seta" src="seta esquerda.png" alt="seta"> </button>
-                </div>
-                <div class="btn-dir">
-                    <button onclick='troca(1)'><img class="seta" src="seta direita.png" alt="seta"> </button>
+            <div class="carrossel" id='carrossel'>
+                <div class="slide active">
+                <img src="G20.jpg" alt="Imagem 1">
+                <div class="description">Descrição da Imagem 1</div>
+            </div>
+            <div class="slide">
+                <img src="Aeroporto SP.jpg" alt="Imagem 2">
+                <div class="description">Descrição da Imagem 2</div>
+            </div>
+            <div class="slide">
+                <img src="Chuva SP.jpg" alt="Imagem 3">
+                <div class="description">Descrição da Imagem 3</div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="prevImage()">❮</button>
+                <button onclick="nextImage()">❯</button>
+            </div>
+            </div>
+            <div class="modal" id="imageModal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="Babaus.jpg" alt="Imagem expandida">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
                 </div>
             </div>
             <div class="noticias">
-                <div id="noticia" class="noticia 1">
+                <div id="noticia-1" class="noticia" onclick="openModal('Babaus.jpg', 'Título da Notícia 1', 'Descrição da notícia 1.')">
                     <img src="Babaus.jpg" alt="babau">
                     <div class="noticia-txt">
                         <h2 class="titulo">Babau</h>
-                        <p> Noticia 3</p>
+                        <p> Noticia 1</p>
                     </div>
                 </div>
-                <div id="noticia" class="noticia 2">
+                <div id="noticia-2" class="noticia" onclick="openModal('gato 2.jpg', 'Título da Notícia 2', 'Descrição da notícia 2.')">
                     <img src="gato 2.jpg" alt="gato 2">
                     <div class="noticia-txt">
                         <h2 class="titulo">Noticia</h>
-                        <p> Noticia 3</p>
+                        <p> Noticia 2</p>
                     </div>
                 </div>
-                <div id="noticia" class="noticia 3">
+                <div id="noticia-3" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 3', 'Descrição da notícia 3.')">
                     <img src="gato 3.jpg" alt="gato 3">
                     <div class="noticia-txt">
                         <h2 class="titulo">Noticia</h>
-                        <p> Noticia 3</p>
+                        <p> noticia</p>
                     </div>
-                    
+                </div>
+                <div id="noticia-4" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 4', 'Descrição da notícia 4.')">
+                    <img src="gato 3.jpg" alt="gato 4">
+                    <div class="noticia-txt">
+                        <h2 class="titulo">Noticia</h>
+                        <p> Noticia 4</p>
+                    </div>
+               </div>
+                <div id="noticia-5" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 5', 'Descrição da notícia 5.')">
+                    <img src="gato 3.jpg" alt="gato 5">
+                    <div class="noticia-txt">
+                        <h2 class="titulo">Noticia</h>
+                        <p> Noticia 5</p>
+                    </div>
+                </div>
+                <div id="noticia-6" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 6', 'Descrição da notícia 6.')">
+                <img src="gato 3.jpg" alt="gato 6">
+                <div class="noticia-txt">
+                    <h2 class="titulo">Noticia</h>
+                    <p> Noticia 6</p>
+                </div>
+               </div>
+               <div id="noticia-7" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 7', 'Descrição da notícia 7.')">
+                <img src="gato 3.jpg" alt="gato 7">
+                <div class="noticia-txt">
+                    <h2 class="titulo">Noticia</h>
+                    <p> Noticia 7</p>
+                </div>
+            </div>
+            <div id="noticia-8" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 8', 'Descrição da notícia 8.')">
+                <img src="gato 3.jpg" alt="gato 8">
+                <div class="noticia-txt">
+                    <h2 class="titulo">Noticia</h>
+                    <p> Noticia 8</p>
+                </div>
+            </div>
+            <div id="noticia-9" class="noticia"onclick="openModal('noticia1.jpg', 'Título da Notícia 9', 'Descrição da notícia 9.')">
+                <img src="gato 3.jpg" alt="gato 9">
+                <div class="noticia-txt">
+                    <h2 class="titulo">Noticia</h>
+                    <p> Noticia 9</p>
                 </div>
             </div>
             </div>
+        </div>
     </main>
 
     <footer>

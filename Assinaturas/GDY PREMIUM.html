@@ -7,6 +7,9 @@
     <title>Premium</title>
 </head>
 <body>
+    <header>
+        
+    </header>
     <div class="container">
         <button id="back-button" class="back-button" onclick="back()">&#8592;</button>
         <h1>GDY PREMIUM</h1>
@@ -20,17 +23,17 @@
         <div class="divider"></div>
         <h2>PLANOS:</h2>
         <div class="plans">
-            <div class="plan">
+            <div class="plan" onmouseover="expandCard(this)" onmouseout="(shrinkCard(this))">
                 <h3>INDIVIDUAL</h3>
                 <p class="price">R$ 9,99</p>
                 <button class="buy-button" onclick="openPaymentModal('Individual', 'R$ 9,99')">COMPRAR</button>
             </div>
-            <div class="plan">
+            <div class="plan" onmouseover="expandCard(this)" onmouseout="(shrinkCard(this))">
                 <h3>DUO</h3>
                 <p class="price">R$ 15,99</p>
                 <button class="buy-button" onclick="openPaymentModal('Duo', 'R$ 15,99')">COMPRAR</button>
             </div>
-            <div class="plan">
+            <div class="plan" onmouseover="expandCard(this)" onmouseout="(shrinkCard(this))">
                 <h3>FAMÍLIA</h3>
                 <p class="price">R$ 19,99</p>
                 <button class="buy-button" onclick="openPaymentModal('Família', 'R$ 19,99')">COMPRAR</button>
