@@ -136,6 +136,13 @@ main{
     margin: 50px auto;
     padding: 0 500px 20px 0;
     border-width: 5px;
+    justify-content: space-between;
+}
+
+#noticia{
+    padding-top: 30px;
+    border-top: 1px solid black;
+    justify-content: space-between;
 }
 
 .noticias img{
@@ -144,6 +151,20 @@ main{
     width: 200px;
     height: 200px;
 }
+
+.noticia-txt{
+    text-align: center;
+    position: relative;
+    left: 50px;
+    bottom: 125px;
+}
+
+.noticia-txt p{
+    size: 3cm;
+    font-style: normal;
+}
+
+
 
 /* Footer */
 
