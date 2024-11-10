@@ -10,39 +10,6 @@ function toggleMenu(){
 }
 
 /*Carrossel*/
-/*var slides=['Chuva SP.jpg', 'G20.jpg', 'Aeroporto SP.jpg']*
-
-var tam = slides.length
-var satual = 0
-var tmpslider
-
-function trocaAutomatica(){
-	satual++
-	if(satual >= tam){
-		satual =0
-	}
-	document.querySelector('#carrossel').style.backgroundImage=`url('${slides[satual]}')`
-}
-
-function iniciaSlider(){
-	document.querySelector('#carrossel').style.backgroundImage=`url('${slides[satual]}')`
-	tmpslider=setInterval(trocaAutomatica,2000)
-}
-
-function parar(){
-	clearInterval(tmpslider)
-}
-
-function troca(dir){
-	satual += dir
-	if(satual < 0){
-		satual = 2
-	}else if(satual >= tam){
-		satual = 0
-	}
-		document.querySelector('#carrossel').style.backgroundImage=`url('${slides[satual]}')`
-		clearInterval(tmpslider)
-	}*/
 
 	let currentIndex = 0;
 	const slides = document.querySelectorAll('.carrossel .slide');
@@ -63,16 +30,13 @@ function troca(dir){
 		showSlide(currentIndex);
 	}
 	
-	// Função para rotação automática
 	function autoRotate() {
 		nextImage();
-		setTimeout(autoRotate, 3000); // Muda a imagem a cada 3 segundos
+		setTimeout(autoRotate, 3000);
 	}
 	
-	// Inicia a rotação automática quando a página carrega
 	window.onload = autoRotate;
 	
-	// Função para pegar a imagem e a descrição de cada slide
 	function getCarouselData() {
 		const data = [];
 		slides.forEach(slide => {
@@ -85,7 +49,16 @@ function troca(dir){
 
 console.log(getCarouselData());
 
-// Função para abrir o modal com imagem e descrição
+function expandCard(card){
+	card.style.transform ='scale(1.10)'
+	card.style.boxShadow = '0 0 0 0 rgba(0,0,0,0.4)'
+}
+
+function shrinkCard(card){
+	card.style.transform ='scale(1)'
+	card.style.boxShadow = 'none'
+}
+
 function openModal(imageSrc, title, description) {
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");

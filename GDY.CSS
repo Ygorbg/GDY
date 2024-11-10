@@ -97,9 +97,7 @@ main{
 }
 
 #corpo{
-    display: grid;
     border: 2px solid #333;
-    margin: 0 250px;
     padding: 15px;
     background-color: #FFFFFF;
 }
@@ -107,7 +105,7 @@ main{
 #carrossel{
 	position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     overflow: hidden;
 }
@@ -201,36 +199,64 @@ main{
 
 .noticias{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    align-items: center;
+    grid-template-columns: 230px 230px 230px;
+    justify-content:space-between ;
     width: 500px;
     margin: 50px auto;
     padding: 0 200px 0px 60px;
     border-width: 5px;
-    justify-items: space-between;
 }
 
-h2{
+.noticias-line{
+    display: grid;
+    grid-template-rows: 230px 230px 230px;
+    justify-content:space-between ;
+    width: 500px;
+    margin: 50px auto;
+    padding: 0 200px 0px 60px;
+    border-width: 5px;
+    
+}
+
+.noticias-line img{
+    width: 200px;
+    height: 200px;
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.noticias-line p{
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+}
+
+h3{
     font-style: italic;
+}
+
+.texto-lado{
+    padding: 30px;
+    float: right;
 }
 
 .noticias p{
     font-weight: 100;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-#noticia{
-    padding: 30px;
-    border-top: 1px solid black;
+.noticia{
     justify-content: space-between;
 }
 
 .noticias img{
     border: 2px;;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
+    cursor: pointer;
 }
 
 /* Footer */

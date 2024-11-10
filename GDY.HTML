@@ -34,7 +34,7 @@
     </div>
 
     <main>
-        <div id="corpo">
+        <section id="corpo">
             <div class="carrossel" id='carrossel'>
                 <div class="slide active">
                 <img src="G20.jpg" alt="Imagem 1">
@@ -63,69 +63,71 @@
                 </div>
             </div>
             <div class="noticias">
-                <div id="noticia-1" class="noticia" onclick="openModal('Babaus.jpg', 'Título da Notícia 1', 'Descrição da notícia 1.')">
+                <div id="noticia-1" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('Babaus.jpg', 'Título da Notícia 1', 'Descrição da notícia 1.')">
                     <img src="Babaus.jpg" alt="babau">
                     <div class="noticia-txt">
-                        <h2 class="titulo">Babau</h>
+                        <h3 class="titulo">Babau</h>
                         <p> Noticia 1</p>
                     </div>
                 </div>
-                <div id="noticia-2" class="noticia" onclick="openModal('gato 2.jpg', 'Título da Notícia 2', 'Descrição da notícia 2.')">
+                <div id="noticia-2" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('gato 2.jpg', 'Título da Notícia 2', 'Descrição da notícia 2.')">
                     <img src="gato 2.jpg" alt="gato 2">
                     <div class="noticia-txt">
-                        <h2 class="titulo">Noticia</h>
+                        <h3 class="titulo">Noticia</h>
                         <p> Noticia 2</p>
                     </div>
                 </div>
-                <div id="noticia-3" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 3', 'Descrição da notícia 3.')">
+                <div id="noticia-3" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 3', 'Descrição da notícia 3.')">
                     <img src="gato 3.jpg" alt="gato 3">
                     <div class="noticia-txt">
-                        <h2 class="titulo">Noticia</h>
+                        <h3 class="titulo">Noticia</h>
                         <p> noticia</p>
                     </div>
                 </div>
-                <div id="noticia-4" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 4', 'Descrição da notícia 4.')">
+                <div id="noticia-4" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 4', 'Descrição da notícia 4.')">
                     <img src="gato 3.jpg" alt="gato 4">
                     <div class="noticia-txt">
-                        <h2 class="titulo">Noticia</h>
+                        <h3 class="titulo">Noticia</h>
                         <p> Noticia 4</p>
                     </div>
                </div>
-                <div id="noticia-5" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 5', 'Descrição da notícia 5.')">
+                <div id="noticia-5" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 5', 'Descrição da notícia 5.')">
                     <img src="gato 3.jpg" alt="gato 5">
                     <div class="noticia-txt">
-                        <h2 class="titulo">Noticia</h>
+                        <h3 class="titulo">Noticia</h>
                         <p> Noticia 5</p>
                     </div>
                 </div>
-                <div id="noticia-6" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 6', 'Descrição da notícia 6.')">
+                <div id="noticia-6" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 6', 'Descrição da notícia 6.')">
                 <img src="gato 3.jpg" alt="gato 6">
                 <div class="noticia-txt">
-                    <h2 class="titulo">Noticia</h>
+                    <h3 class="titulo">Noticia</h>
                     <p> Noticia 6</p>
                 </div>
                </div>
-               <div id="noticia-7" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 7', 'Descrição da notícia 7.')">
-                <img src="gato 3.jpg" alt="gato 7">
-                <div class="noticia-txt">
-                    <h2 class="titulo">Noticia</h>
-                    <p> Noticia 7</p>
-                </div>
             </div>
-            <div id="noticia-8" class="noticia" onclick="openModal('noticia1.jpg', 'Título da Notícia 8', 'Descrição da notícia 8.')">
-                <img src="gato 3.jpg" alt="gato 8">
-                <div class="noticia-txt">
-                    <h2 class="titulo">Noticia</h>
-                    <p> Noticia 8</p>
+            <div class="noticias-line">
+                <div id="noticia-7" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 7', 'Descrição da notícia 7.')">
+                    <img src="gato 3.jpg" alt="gato 7">
+                    <div class="texto-lado">
+                        <h3 class="titulo">Noticia</h>
+                        <p> Noticia 7</p>
+                    </div>
                 </div>
-            </div>
-            <div id="noticia-9" class="noticia"onclick="openModal('noticia1.jpg', 'Título da Notícia 9', 'Descrição da notícia 9.')">
-                <img src="gato 3.jpg" alt="gato 9">
-                <div class="noticia-txt">
-                    <h2 class="titulo">Noticia</h>
-                    <p> Noticia 9</p>
+                <div id="noticia-8" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 8', 'Descrição da notícia 8.')">
+                    <img src="gato 3.jpg" alt="gato 8">
+                    <div class="texto-lado">
+                        <h3 class="titulo">Noticia</h>
+                        <p> Noticia 8</p>
+                    </div>
                 </div>
-            </div>
+                <div id="noticia-9" class="noticia" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)" onclick="openModal('noticia1.jpg', 'Título da Notícia 9', 'Descrição da notícia 9.')">
+                    <img src="gato 3.jpg" alt="gato 9">
+                    <div class="texto-lado">
+                        <h3 class="titulo">Noticia</h>
+                        <p> Noticia 9</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
