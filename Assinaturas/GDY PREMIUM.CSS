@@ -138,3 +138,73 @@ h2 {
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        bottom: 100px;
+        left: 20px;
+        right: 20px;
+        transform: none;
+        max-width: 90%;  /* Reduz o tamanho do container */
+    }
+
+    .plans {
+        justify-content: center;  /* Centraliza os planos em telas menores */
+    }
+
+    .plan {
+        width: 45%;  /* Ajusta a largura dos planos em telas médias */
+    }
+
+    h1 {
+        font-size: 20px;  /* Ajusta o tamanho do título */
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .buy-button {
+        padding: 5px 8px;  /* Ajusta o tamanho do botão */
+    }
+
+    .modal-content {
+        width: 90%;  /* Modal ocupa 90% da largura em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        bottom: 50px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .plans {
+        flex-direction: column;  /* Alinha os planos em coluna */
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%;  /* Ajusta a largura dos planos em telas muito pequenas */
+        margin-bottom: 10px;  /* Dá um espaçamento entre os planos */
+    }
+
+    h1 {
+        font-size: 18px;  /* Ajuste para título em dispositivos muito pequenos */
+    }
+
+    .subtitulo {
+        font-size: 14px;
+    }
+
+    .buy-button {
+        padding: 6px 12px;  /* Tamanho ajustado do botão */
+    }
+
+    .modal-content {
+        width: 95%;  /* Modal ocupa 95% da largura da tela em dispositivos móveis */
+    }
+}

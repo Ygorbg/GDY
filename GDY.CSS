@@ -120,11 +120,15 @@ main{
 .descricao{
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 130px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 5px;
+    margin: 0 50px 0 0;
     border-radius: 5px;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+    text-justify: distribute;
 }
 
 .buttons {
@@ -331,4 +335,138 @@ rodape{
 .rodape_col{
 	width: 400px;
 	height: 200px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .side-menu {
+        width: 100%;
+        height: 100%;
+    }
+
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .carrossel {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+}
+
+/* Tela menor que 480px */
+@media (max-width: 480px) {
+    .noticias-line img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal img {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        max-width: 100%;
+    }
+
+    .side-menu {
+        width: 100%;
+        top: 0;
+    }
+
+    .nav-bar a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .buttons button {
+        padding: 5px;
+        font-size: 14px;
+    }
+}@media (max-width: 768px) {
+    /* Ajuste no layout para dispositivos menores */
+    .nav-bar {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center;
+    }
+
+    .noticias, .noticias-line {
+        grid-template-columns: 1fr 1fr; /* 2 colunas em telas médias */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Modal ocupa 90% da tela */
+    }
+
+    .user-icon {
+        height: 25px;
+    }
+
+    #carrossel {
+        max-width: 100%; /* Carrossel ocupa toda a largura da tela */
+    }
+}
+@media (max-width: 768px) {
+    /* Ajuste no layout para dispositivos menores */
+    .nav-bar {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center;
+    }
+
+    .noticias, .noticias-line {
+        grid-template-columns: 1fr 1fr; /* 2 colunas em telas médias */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Modal ocupa 90% da tela */
+    }
+
+    .user-icon {
+        height: 25px;
+    }
+
+    #carrossel {
+        max-width: 100%; /* Carrossel ocupa toda a largura da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos muito pequenos */
+    .nav-bar {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+    }
+
+    .noticias, .noticias-line {
+        grid-template-columns: 1fr; /* Uma coluna */
+    }
+
+    .user-icon {
+        height: 20px;
+    }
+
+    .modal-content {
+        max-width: 95%; /* Modal ocupa 95% da tela */
+    }
+
+    .search-bar {
+        width: 100%; /* Barra de busca ocupa toda a largura */
+    }
+
+    .social-media img {
+        width: 5%;
+        height: auto;
+    }
 }
