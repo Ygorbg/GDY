@@ -14,23 +14,24 @@
         <form>
             <h1>login</h1>
             <div class="login">
-                <input id="user" type="text" placeholder="user" required>
+                <input id="user" type="text" placeholder="usuario" required>
             </div>
             <div class="login">
-                <input id="senha" type="password" placeholder="password" required>
+                <input id="senha" type="password" placeholder="senha" required>
             </div>
 
-            <div class="remember-forgot">
-                <label><input type="checkbox">remember me </label>
-                <a href="#">forgot password?</a>
+            <div class="esqueceu-senha">
+                <label><input type="checkbox">lembrar de mim</label>
+                <p id="esqueceu">esqueceu a senha?</p>
             </div>
-
-            <button type="submit" class="btn" onclick="logar(); return false">continuar</button>
-
-            <button class="btn" id="voltar" type="submit" onclick="sair(); return false">sair</button>
-
-            <div class="resgister-link">
-                <p>don't have an account? <a href="#">resgiter</a></p>
+            <div class="botoes">
+                <button type="submit" class="btn" onclick="logar(); return false">continuar</button>
+            </div>
+            <div class="voltar">
+                <button class="btn" id="voltar" type="submit" onclick="sair(); return false">sair</button>
+            </div>
+            <div class="registrar">
+                <p>não tem uma conta? <a href="#">resgistrar-se</a></p>
             </div>
         </form>
     </div>

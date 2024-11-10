@@ -12,18 +12,6 @@
       min-height: 100vh;
       background: gray;
   }
-
-  .back-button {
-    font-size: 24px;
-    background-color: #175f94;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
   
   .caixa-login {
       width: 420px;
@@ -58,26 +46,31 @@
       color: #fff;
       padding: 20px 45px 20px 20px;
   }
+
+  .login input::placeholder {
+    color: #ffffffce;
+  }
   
-  .caixa-login .remember-forgot {
+  .caixa-login .esqueceu-senha {
       display: flex;
       justify-content: space-between;
       font-size: 15px;
       margin: -15px 0 15px;
   }
   
-  .remember-forgot label input {
+  .esqueceu-senha label input {
       accent-color: #fff;
       margin-right: 3px;
       cursor: pointer;
   }
   
-  .remember-forgot a {
+  .esqueceu-senha p {
       color: #fff;
       text-decoration: none;
+      cursor: pointer;
   }
   
-  .remember-forgot a:hover {
+  .esqueceu-senha p:hover {
       text-decoration: underline;
   }
   
@@ -94,21 +87,29 @@
       color: #333;
       font-weight: 600;
   }
+
+  .botoes{
+    padding: 0 0 5px 0;
+  }
+
+  .voltar{
+    padding: 0 0 20px 0;
+  }
   
-  .caixa-login .register-link {
+  .caixa-login .registrar {
       font-size: 15px;
       text-align: center;
       margin-top: 20px 0 15px;
   
   }
   
-  .register-link p a {
+  .registrar p a {
       color: #fff;
       text-decoration: none;
       font-weight: 600;
   
   }
   
-  .register-link p a:hover {
+  .registrar p a:hover {
       text-decoration: underline;
   }

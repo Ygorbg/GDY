@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: lightgray;
 }
 
 /* Header */
@@ -14,8 +15,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
-    margin: 5px;
 }
 
 .nav-bar{
@@ -59,7 +58,7 @@ ul{
 
 .side-menu {
     height: 0;
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 15;
     right: 0;
@@ -72,7 +71,7 @@ ul{
 .side-menu a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -97,9 +96,8 @@ main{
 }
 
 #corpo{
-    border: 2px solid #333;
     padding: 15px;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 #carrossel{
@@ -119,7 +117,7 @@ main{
 }
 
 
-.description{
+.descricao{
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -159,11 +157,11 @@ main{
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #175f94;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
-    max-width: 90%;
+    max-width: 60%;
     max-height: 80%;
     overflow-y: auto;
     position: relative;
@@ -171,80 +169,87 @@ main{
 
 .modal img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height:500px ;
     max-width: 500px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #333;
+    padding: 1px 5px 0 0;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;
+    color: #fff;
     cursor: pointer;
 }
 
 .modal h2 {
     margin-top: 15px;
     font-size: 24px;
-    color: #333;
+    color: #fff;
 }
 
 .modal p {
     margin-top: 10px;
     font-size: 16px;
-    color: #555;
+    color: #fff;
+    text-align: center;
 }
 
 .noticias{
     display: grid;
-    grid-template-columns: 230px 230px 230px;
+    grid-template-columns: 250px 250px 250px;
     justify-content:space-between ;
     width: 500px;
     margin: 50px auto;
-    padding: 0 200px 0px 60px;
+    padding: 0 240px 0px 40px;
     border-width: 5px;
 }
 
 .noticias-line{
     display: grid;
-    grid-template-rows: 230px 230px 230px;
-    justify-content:space-between ;
+    grid-template-rows: 200px 200px 200px;
+    grid-row-start:auto;
+    justify-content:space-between;
     width: 500px;
     margin: 50px auto;
     padding: 0 200px 0px 60px;
     border-width: 5px;
-    
 }
 
 .noticias-line img{
-    width: 200px;
-    height: 200px;
+    float: left;
+    width: 150px;
+    height: 150px;
     border: 2px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.noticias-line p{
-    font-weight: 100;
-    font-style: normal;
-    font-size: 14px;
+.noticias-line h4{
+    padding: 0 0 0 20px;
+    display: inline-block;
 }
 
-h3{
+.titulo{
     font-style: italic;
+    text-align:start;
+    padding: 0px 10px 5px 3px;
 }
 
 .texto-lado{
-    padding: 30px;
-    float: right;
+   float: right;
+   text-align: left;
+   text-justify:auto;
 }
 
 .noticias p{
     font-weight: 100;
     font-style: normal;
     font-size: 14px;
+    text-align: center;
 }
 
 .noticia{
@@ -266,10 +271,13 @@ footer {
     color: #FFFFFF;
     padding: 10px 20px;
     text-align: center;
-    border: 2px solid black;
 }
 
-.social-media a {
+#social-media{
+	margin-right: 10px;
+}
+
+#social-media a {
     margin-right: 10px;
     color: #FFFFFF;
     text-decoration: none;
@@ -277,14 +285,50 @@ footer {
 }
 
 .social-media img{
-    width: 3%;
-    height: 3%;
+    width: 7%;
+    height: 15%;	
+	color: #fff;
+	align-content: center;
 }
 
-.contact-info {
+#contact-info {
     margin-top: 10px;
 }
 
-.contact-info a{
+#contact-info a{
     color: #FFFFFF;
+}
+
+#menu-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact-info img{
+    width: 4%;
+    width: 3%;
+    height: 5%;	
+	color: #fff;
+}
+
+ h5, h6{
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}
+
+rodape{
+	width: 400px;
+	height: 150px;
+	display: flex;
+}
+
+.rodape_col{
+	width: 400px;
+	height: 200px;
 }

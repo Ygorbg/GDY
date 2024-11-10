@@ -37,17 +37,19 @@ function toggleMenu(){
 	
 	window.onload = autoRotate;
 	
-	function getCarouselData() {
+	function textoCarrossel() {
 		const data = [];
 		slides.forEach(slide => {
 			const img = slide.querySelector('img').src;
-			const description = slide.querySelector('.description').textContent;
+			const description = slide.querySelector('.descricao').textContent;
 			data.push({ img, description });
 		});
 		return data;
 	}
 
-console.log(getCarouselData());
+console.log(textoCarrossel());
+
+//Expandir noticias
 
 function expandCard(card){
 	card.style.transform ='scale(1.10)'
@@ -58,6 +60,8 @@ function shrinkCard(card){
 	card.style.transform ='scale(1)'
 	card.style.boxShadow = 'none'
 }
+
+//Modal das Noticias
 
 function openModal(imageSrc, title, description) {
     const modal = document.getElementById("imageModal");
@@ -72,13 +76,12 @@ function openModal(imageSrc, title, description) {
     modal.style.display = "flex";
 }
 
-// Função para fechar o modal
+
 function closeModal() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
 }
 
-// Fechar o modal ao clicar fora da área de conteúdo
 window.onclick = function(event) {
     const modal = document.getElementById("imageModal");
     if (event.target === modal) {
